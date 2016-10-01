@@ -36,7 +36,7 @@ module.exports = function (grunt) {
     watch: {
       styles: {
         files: ['sass/**/*.{sass,scss}'],
-        tasks: ['sass:dev', 'postcss', 'cssmin'],
+        tasks: ['sass:dev'],
         options: {
           spawn: false
         }
@@ -49,4 +49,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['sass:dev', 'postcss']);
+  grunt.registerTask('dev', ['sass:dev']);
 };
