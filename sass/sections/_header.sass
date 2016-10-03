@@ -1,0 +1,30 @@
+header
+  text-align: center
+  margin-top: 40px
+
+  +media('>phablet')
+    margin-top: 80px
+
+  img
+    display: inline-block
+
+  .header-links
+    a
+      text-decoration: none
+
+      &:hover
+        text-decoration: none
+
+      img
+        height: auto
+        max-width: 48px
+        display: inline-block
+        margin-right: 10px
+
+        +media('>phablet')
+          max-width: 100%
+          margin-right: 40px
+
+      &:last-of-type
+        img
+          margin-right: 0

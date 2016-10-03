@@ -1,0 +1,22 @@
+@mixin skill-level-x
+  @for $i from 1 through 10
+    .skill-level-#{$i}
+      &:after
+        width: percentage($i/10)
+        @extend %skill-level-x-all
+
+@include skill-level-x
+
+%skill-level-x-all
+  display: block
+  content: " "
+  height: 10px
+  background: $green
+
+.skill-level-bar
+  display: block
+  height: 10px
+  width: 100%
+  background: $gray
+  margin: 0 0 40px 0
+
