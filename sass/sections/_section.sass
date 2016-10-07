@@ -1,6 +1,9 @@
 section
   margin-bottom: 80px
 
+  +media('print')
+    margin-bottom: 60px
+
 section#contact
   margin-bottom: 40px
 
@@ -14,6 +17,7 @@ section#skillset
 .contact-links
   a
     text-decoration: none
+    vertical-align: middle
 
     &:hover
       text-decoration: none
@@ -27,3 +31,17 @@ section#skillset
     &:last-of-type
       img
         margin-right: 0
+
+  +media('print')
+    a
+      display: block
+      margin-bottom: 5px
+
+      &:after
+        vertical-align: middle
+        display: inline-block
+        content: " " attr(href) ""
+
+      img
+        vertical-align: middle
+        margin-right: 10px !important
