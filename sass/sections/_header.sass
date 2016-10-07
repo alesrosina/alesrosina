@@ -16,3 +16,12 @@ h2.header-blue
   color: $blue
   font-size: 20px
   line-height: 24px
+
+
++media('print')
+  header:before
+    content: '(This is extract of my profile found at alesrosina.com)'
+    margin-bottom: 20px
+    font-size: $small-font-size
+    line-height: $small-line-height
+    display: block
