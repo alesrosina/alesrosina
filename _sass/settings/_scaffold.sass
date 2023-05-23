@@ -12,7 +12,7 @@ h1, .text-big
   font-size: $h1-font-size / 1.125
   line-height: $h1-line-height / 1.125
 
-  +media('>phablet')
+  @media only screen and (min-width: $media-breakpoint)
     font-size: $h1-font-size
     line-height: $h1-line-height
 
@@ -42,5 +42,5 @@ header, section, footer
   display: block
   margin: 0 auto
 
-  +media('>phablet')
+  @media only screen and (min-width: $media-breakpoint)
     max-width: 640px

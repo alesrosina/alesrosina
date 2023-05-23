@@ -1,0 +1,21 @@
+---
+layout: base
+---
+<header class="small">
+  <p>
+    <a href="/" alt="Back to home">
+      <img src="/assets/images/logo.png" alt="Aleš Rosina">
+    </a>
+  </p>
+
+  <h2>{{ page.title | capitalize }}.</h2>
+  <h2 class="header-blue">{{ page.date | date: "%A, %d.%m.%Y" }}</h2>
+</header>
+
+<section>
+  {{ content }}
+</section>
+
+<section>
+<a href="/">&lt; Back to home</a>
+</section>

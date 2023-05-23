@@ -2,7 +2,7 @@ header
   text-align: center
   margin-top: 40px
 
-  +media('>phablet')
+  @media only screen and (min-width: $media-breakpoint)
     margin-top: 80px
 
   img
@@ -12,13 +12,18 @@ header
   h1
     margin-bottom: 8px
 
+  &.small
+    img
+      width: 64px
+      height: 64px
+
 h2.header-blue
   color: $blue
   font-size: 20px
   line-height: 24px
 
 
-+media('print')
+@media print
   header:before
     content: '(This is extract of my profile found at alesrosina.com)'
     margin-bottom: 20px

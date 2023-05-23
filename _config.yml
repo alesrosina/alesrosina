@@ -1,0 +1,19 @@
+url: "https://alesrosina.com" # the base hostname & protocol for your site, e.g. http://example.com
+domain: "alesrosina.com"
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Ales Rosina | a software engineer" # the name of your site, e.g. ACME Corp.
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+  - scope:
+      path: "assets/icons"
+    values:
+      image: true
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "posts"
