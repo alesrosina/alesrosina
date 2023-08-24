@@ -1,24 +1,35 @@
 ---
-layout: default
-title: ""
+layout: base
 ---
+<header>
+  <p>
+    <img src="assets/images/logo.png" alt="Aleš Rosina">
+  </p>
+
+  <h1>Aleš Rosina</h1>
+
+  <h2 class="header-blue">I am a software engineer, team player and a father.</h2>
+</header>
+
 <section id="about">
   <p>
-    My name is <b>Aleš Rosina</b>, currently living and working in <b>Zürich, Switzerland</b>. I have been working with web
-    technologies almost all of my professional career. It all started in primary school, in
-    1999, when I made my first website hosted on GeoCities. Soon I relised HTML & CSS is not enough, so I started
-    exploring Microsoft stack (C#, ASP.NET, WebForms, ASP.NET MVC, …), where I spent a few years. Fast forward to today,
-    I spent most of my time working on <b>Ruby on Rails</b> and <b>JavaScript</b> as my perferred technology stack.
+    I was born in Ljubljana, Slovenia, where I spent my first 30 years. I've finished Faculty of Computer Science at
+    University of Ljubljana in 2009 and also worked in few local companies as Software Developer.
   </p>
-
   <p>
-    Nevertheless, I was always in contact with front-end technologies, since my main drive was always a nice and clean
-    user interface.
+    Since I've entered University, I've traveled a lot and that gave me another sense of the world. It also triggered a
+    wish, to go and try to live somewhere else, than a city I was born in. This happened in 2016, where I got an offer
+    to move to Zürich, Switzerland. At first only for two months, but somehow it happened, that I stayed.
   </p>
-
   <p>
-    I was also active in the local community, organizing <b>Mobile Monday Slovenia</b> events and
-    co-organizing <a href="http://www.tedxljubljana.com" target="_blank">TEDxLjubljana</a> events.
+    Having settled here, I've also become a father, which was (and still is) a big change in life and is just bringing a
+    smile (and sometimes tears) on my face.
+  </p>
+  <p>
+    I like to work with open minded people and in a team, since I think we can make something big only together. I'm
+    quite strong in web development, with most of my latest background being Ruby on Rails & JavaScript frontend (Vuejs,
+    React, Angular, etc). Lately I've been also focusing on helping and organizing other developers in a team as a team
+    lead.
   </p>
 </section>
 
@@ -26,84 +37,58 @@ title: ""
   <h2>Random thoughts</h2>
 
   <p>
-    This section is an experiment, where I'll try to polish a bit my writing skills. So, expect exactly as what the
+    I am trying to polish a bit my writing skills. So, expect exactly as what the
     title is saying - just random thoghts written "on paper".
   </p>
 
   <ul>
     {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
     {% endfor %}
   </ul>
 
 </section>
 
 <section id="skillset">
-  <h2>Skillset <sup>*</sup></h2>
-
-  <h3>HTML</h3>
-
-  <div class="skill-level-bar skill-level-10"></div>
-
-  <h3>CSS (including preprocessors SASS, SCSS, LESS)</h3>
-
-  <div class="skill-level-bar skill-level-10"></div>
-
-  <h3>Vanilla JavaScript</h3>
-
-  <div class="skill-level-bar skill-level-9"></div>
-
-  <h3>Angular</h3>
-
-  <div class="skill-level-bar skill-level-4"></div>
-
-  <h3>Angular 2 (& beyond)</h3>
-
-  <div class="skill-level-bar skill-level-6"></div>
-
-  <h3>Node.js</h3>
-
-  <div class="skill-level-bar skill-level-3"></div>
+  <h2>Skillset</h2>
 
   <h3>Ruby on Rails</h3>
+  <div class="skill-level-bar skill-level-10"></div>
 
-  <div class="skill-level-bar skill-level-8"></div>
+  <h3>HTML + CSS</h3>
+  <div class="skill-level-bar skill-level-10"></div>
 
-  <h3>Mobile development with Ionic & Ionic2</h3>
-
-  <div class="skill-level-bar skill-level-5"></div>
-
-  <h3>Continous integration (GitLab, Travis)</h3>
-
-  <div class="skill-level-bar skill-level-8"></div>
-
-  <h3>Git</h3>
-
+  <h3>Frontend JavaScript (Vanilla, Angular, React, Vuejs, etc)</h3>
   <div class="skill-level-bar skill-level-7"></div>
 
-  <h3>Git services (GitHub, Bitbucket, GitLab)</h3>
+  <h3>Backend JavaScript (Node.js, Apollo, etc.)</h3>
+  <div class="skill-level-bar skill-level-4"></div>
 
-  <div class="skill-level-bar skill-level-9"></div>
+  <h3>App development (iOS & Android)</h3>
+  <div class="skill-level-bar skill-level-5"></div>
+
+  <h3>DevOps (CD/CI, kubernetes, docker, etc)</h3>
+  <div class="skill-level-bar skill-level-7"></div>
+
+  <h3>Management/Social skills (Team Lead, Scrum, PM)</h3>
+  <div class="skill-level-bar skill-level-5"></div>
+
 </section>
 
 <section id="contact">
   <h2>Want more? Contact me.</h2>
 
-  <p>
-    Looking for a long-term dedicated team member or a freelancer?
-    <br>
-    You can reach me at <a href="mailto:me@alesrosina.com">me@alesrosina.com</a>.
-  </p>
-
   <div class="contact-links">
+    <a href="mailto:me@alesrosina.com?subject=Hi%20from%20alesrosina.com">
+      <img src="assets/mail-open-outline.svg" alt="Email">
+    </a>
     <a href="https://github.com/alesrosina" target="_blank">
-      <img src="assets/images/links_github.png" alt="GitHub">
+      <img src="assets/logo-github.svg" alt="GitHub">
     </a>
     <a href="https://ch.linkedin.com/in/alesrosina" target="_blank">
-      <img src="assets/images/links_linkedin.png" alt="LinkedIn">
+      <img src="assets/logo-linkedin.svg" alt="LinkedIn">
     </a>
   </div>
 </section>
-

@@ -19,13 +19,15 @@ Oh, and here is the link to repo: https://github.com/alesrosina/alesrosina :)
 --------------------------------------------------------------------------------------------------------------------->
 
 <head>
-  <title>{{ page.title | capitalize }} | {{ site.title }}</title>
+  {% if page.title.blank? %}
+    <title>{{ site.title }}</title>
+  {% else %}
+    <title>{{ page.title | capitalize }} | {{ site.title }}</title>
+  {% endif %}
   <meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport">
   <meta charset='utf-8'>
   <meta name="description" content="A full-stack Rails developer with focus on frontend development."/>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans&subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   <!-- Facebook share details -->
   <meta property="og:url" content="http://alesrosina.com"/>
   <meta property="og:type" content="profile"/>
