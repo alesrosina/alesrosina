@@ -18,6 +18,12 @@ header {
       width: 64px;
       height: 64px;
     }
+
+    h1 {
+      font-size: $h2-font-size;
+      line-height: $h2-line-height;
+      margin-bottom: 40px;
+    }
   }
 }
 h2.header-blue {
