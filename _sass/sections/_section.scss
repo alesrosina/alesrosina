@@ -5,9 +5,11 @@ section {
     margin-bottom: 60px;
   }
 }
+
 section#contact {
   margin-bottom: 40px;
 }
+
 section#about, section#post {
   text-align: justify;
 
@@ -17,11 +19,26 @@ section#about, section#post {
     border: 1px solid $gray;
   }
 }
+
 section#skillset {
   h3 {
     margin-bottom: 4px;
   }
 }
+
+ul.big-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 16px;
+    a {
+      font-size: $h3-font-size;
+      line-height: $h3-line-height;
+    }
+  }
+}
+
 .contact-links {
   a {
     text-decoration: none;
