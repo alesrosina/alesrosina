@@ -1,4 +1,8 @@
-In my child's daycare the have a toy called [Toniebox](https://tonies.com). Well, it's quite cool device for kids, that has no screens, but very intuitive UI - you put a small toy in a shape of eg. Mickey Mouse or Elsa and it will start playing a song or audio book. But, it's all connected to cloud - so nothing works without internet and you also need an online account. From privacy point of view I think this is not acceptable, since Toniebox always knows what my child has listened to. At least not from my point of view. 
+---
+tag: 🇬🇧
+---
+
+In my child's daycare the have a toy called [Toniebox](https://tonies.com). Well, it's quite cool device for kids, that has no screens, but very intuitive UI - you put a small toy in a shape of eg. Mickey Mouse or Elsa and it will start playing a song or audio book. But, it's all connected to cloud - so nothing works without internet and you also need an online account. From privacy point of view I think this is not acceptable, since Toniebox always knows what my child has listened to. At least not from my point of view.
 
 But beside privacy concerns I also wanted to do some tinkering and soldering with actual hardware. Quite quickly I've discovered a project called [PhonieBox](https://github.com/MiczFlor/RPi-Jukebox-RFID), which is an open source project and can be run on Raspberry Pi. Not to mention, that it can run totally offline and you can actually upload MP3 files with playlists.
 
@@ -12,12 +16,12 @@ Saddly using a USB RFC reader, which basically simulates a keyboard has a drawba
 
 ## Phase 2 - final "product"
 
-Since the test was a success, I've decided to upgrade the whole project to a bit nicer box with few hardware buttons (volume and power). 
+Since the test was a success, I've decided to upgrade the whole project to a bit nicer box with few hardware buttons (volume and power).
 
 To get a bit technical, here's the list of components:
 
 - Cheap (~ $20) USB speakers
-- Rotary knob KY-040 
+- Rotary knob KY-040
 - RFID module RC522
 - LED green light
 - Basic button
@@ -32,7 +36,7 @@ After ordering all parts, I also needed a box. I've decided for a clean box with
 For side panels I went with a bit thicker wood plates and for front I went with a very thin wood plate. I would not go technical here, since I went to local hardware store and asked something in line "I like this and this wood and can you please cut it with this measurements". No idea which wood is that actually, it just looked nice to me and they had those small pieces in stock.
 
 ![Wooden box frame](/assets/images/2024-03-13-personal-projects-(part-1)/2.jpg)
- 
+
 ### Assembly
 
 When all the parts finally arrived, I've finally managed to assemble everything together. My skills for soldering are quite bad, but I've managed to shorten cables from speaker, solder LED light and power button to cables. Everything else was just attaching cables to correct pins on Raspberry PI.
@@ -55,6 +59,6 @@ The second thing I've added was to install also [Shareport Sync](https://github.
 
 And since I've removed the battery, now the power button is kinda obsolete, so I need to figure out for what it should be used.
 
-There's also some ideas, that rotary knob should also control volume, when music is played over AirPlay, but that's not yet configured. 
+There's also some ideas, that rotary knob should also control volume, when music is played over AirPlay, but that's not yet configured.
 
 Another task for future added to my endless "personal tasks list".
