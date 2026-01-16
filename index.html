@@ -45,8 +45,11 @@ layout: base
   <ul class="big-list">
     {% for post in site.posts limit:5 %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <div>{{ post.date | date: '%A, %e. %B %Y' }}</div>
+      <div class="title">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <small>{{ post.date | date: '%A, %e. %B %Y' }}</small>
+      </div>
+      <p>{{ post.excerpt }}</p>
     </li>
     {% endfor %}
   </ul>
@@ -54,7 +57,9 @@ layout: base
   <a href="/posts.html">See all posts</a>
 
 </section>
-
+<!--
+### since I'm not looking for a job and this list is changing a lot, I'm just commenting this out.
+### but if you are reading this, i guess skills are still pretty much accurate.
 <section id="skillset">
   <h2>Skillset</h2>
 
@@ -80,7 +85,7 @@ layout: base
   <div class="skill-level-bar skill-level-5"></div>
 
 </section>
-
+-->
 <section id="contact">
   <h2>Want more? Contact me.</h2>
 

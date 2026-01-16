@@ -6,8 +6,11 @@ title: Random thoughts
 <ul class="big-list">
   {% for post in site.posts %}
   <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <div>{{ post.tag }} {{ post.date | date: '%A, %e. %B %Y' }}</div>
+    <div class="title">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <small>{{ post.tag }} {{ post.date | date: '%A, %e. %B %Y' }}</small>
+    </div>
+    <p>{{ post.excerpt }}</p>
   </li>
   {% endfor %}
 </ul>
